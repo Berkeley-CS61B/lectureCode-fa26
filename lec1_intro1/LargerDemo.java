@@ -7,6 +7,5 @@ int larger(int x, int y) {
 
 void main() {
 	IO.println(larger(5, 10));
-	IO.println(larger("a", "z"));
 }
 	
