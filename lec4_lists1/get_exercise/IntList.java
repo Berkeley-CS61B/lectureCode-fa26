@@ -1,3 +1,5 @@
+package lec4_lists1.get_exercise;
+
 public class IntList {
 	public int first;
 	public IntList rest;
