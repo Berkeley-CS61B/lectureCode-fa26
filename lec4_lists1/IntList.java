@@ -32,6 +32,16 @@ public class IntList {
         return totalSize;
     }
 
+    // i'll do it recursively in class
+    public int get(int i) {
+        if (i == 0) {
+            return this.first; //return first;
+        }
+        // my 5th item
+        // is my rest's 4th item
+        return this.rest.get(i - 1);
+    }
+
     static void main() {
         /*
         // demo below showing how we add items to the end
@@ -50,7 +60,15 @@ public class IntList {
         // then let's put 5 at the front
         L = new IntList(5, L);
 
+        // 5 -> 10 -> 3
+
         // should print 3
-        System.out.println(L.iterativeSize());
+        IO.println(L.iterativeSize());
+        IO.println(L.get(2));
+
+        // L is 5 -> 10 -> 3
+        IntList L2 = IntListTools.incrementRecursiveNonDestructive(L, 10);
+
+        // L2 should be 15 -> 20 -> 13
     }
 }
