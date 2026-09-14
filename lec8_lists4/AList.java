@@ -23,17 +23,7 @@ public class AList {
         items[size] = x;
         size += 1;
     }
-    public void addLast(int x) {
-        if (__________________________) {
-            int[] resized = new int[size + 1];
-            for (_______________________________________) {
-                ______________ = ______________;
-            }
-            __________ = resized;
-        }
-        items[size] = x;
-        size += 1;
-    }
+
     /** returns the ith item */
     public int get(int i) {
         return items[i];
