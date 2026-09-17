@@ -16,7 +16,12 @@ public class AList {
 
     public void addLast(int x) {
         if (size == items.length) {
-            resize(size);
+            resize((int) (size * 1.1));
+
+
+
+
+
             // other resizing strategies:
             //  resize(size + 1000);
             //  resize(size * 2));

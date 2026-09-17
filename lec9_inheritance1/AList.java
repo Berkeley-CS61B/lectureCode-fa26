@@ -1,4 +1,4 @@
-package lec8_lists4;
+package lec9_inheritance1;
 
 // AList is an infinitely extensible list of intege3rs
 // that uses an array under the hood.
